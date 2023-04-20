@@ -55,7 +55,7 @@ func! CompileRunGcc()
 exec "w"
 if &filetype == 'c'
 exec "!gcc % -o %<"
-exec "!time ./%<"
+exec "terminal ./%<"
 elseif &filetype == 'cpp'
 exec "!g++ % -o %<"
 exec "!time ./%<"
